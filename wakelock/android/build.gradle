@@ -36,6 +36,9 @@ android {
     lintOptions {
         disable 'InvalidPackage'
     }
+    if (project.android.hasProperty("namespace")) {
+        namespace "creativemaybeno.wakelock"
+    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
